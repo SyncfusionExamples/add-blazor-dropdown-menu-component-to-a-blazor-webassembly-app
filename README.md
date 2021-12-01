@@ -1,0 +1,2 @@
+# add-blazor-dropdown-menu-component-to-a-blazor-webassembly-app
+A quick start Blazor project that shows how to add Syncfusion Blazor Dropdown Menu component to a Blazor WebAssembly App. This project also includes a code snippet to add icons and change their positions, navigate to other webpages, display the Dropdown Menu items horizontally, hide the Dropdown Menu arrow and bind a click event to the component.
