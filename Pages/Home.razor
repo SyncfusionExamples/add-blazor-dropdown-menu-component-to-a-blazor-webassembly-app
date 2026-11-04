@@ -1,0 +1,30 @@
+﻿@page "/"
+
+<div class="control_wrapper">
+    <SfDropDownButton Content="@ButtonContent" IconCss="e-ddb-icons e-menu"
+                      IconPosition="SplitButtonIconPosition.Left"
+                      CssClass="e-popup-items li e-caret-hide">
+        <DropDownButtonEvents OnOpen="DisableListItem"> </DropDownButtonEvents>
+        <DropDownMenuItems>
+
+            <DropDownMenuItem Text="Edit"></DropDownMenuItem>
+            <DropDownMenuItem Text="Delete" Disabled="@ListItemState"></DropDownMenuItem>
+            <DropDownMenuItem Text="Mark as Read"></DropDownMenuItem>
+            <DropDownMenuItem Text="Like"></DropDownMenuItem>
+            <DropDownMenuItem Text="Share" Url="https://www.google.co.in/search?q=twitter"></DropDownMenuItem>
+
+        </DropDownMenuItems>
+    </SfDropDownButton>
+</div>
+
+@code {
+    public Boolean ListItemState;
+
+    public void DisableListItem(BeforeOpenCloseMenuEventArgs args)
+    {
+        ListItemState = !ListItemState;
+    }
+
+    public string ButtonContent = "Options";
+}
+

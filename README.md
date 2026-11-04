@@ -8,11 +8,11 @@ A quick start Blazor project that shows how to add Syncfusion Blazor Dropdown Me
 
 ## Prerequisites
 
-* Visual Studio 2022
+* Visual Studio 2022 or later, or Visual Studio Code with the C# Dev Kit
+* .NET 10.0 SDK
 
 ## How to run the project
 
 * Checkout this project to a location in your disk.
-* Open the solution file using the Visual Studio 2022.
-* Restore the NuGet packages by rebuilding the solution.
+* Restore the NuGet packages by building the project.
 * Run the project.
